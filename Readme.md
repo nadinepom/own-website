@@ -1,9 +1,20 @@
-# NativeBase TypeScript Expo Template
+# Own Website
 
-The official NativeBase TypeScript template for [Expo](https://docs.expo.io/)
+Create a own website with react native web with the template NativeBase
 
-## Usage
+## How to start the project: 
 
 ```sh
-expo init my-app --template @native-base/expo-template-typescript
+expo start
+
+-- web
+-- ios
+--android
 ```
+
+
+## References: 
+
+NativeBase: https://nativebase.io/
+Expo: https://expo.dev/
+React Native for web: https://necolas.github.io/react-native-web/
