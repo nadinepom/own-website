@@ -1,0 +1,14 @@
+{
+  "aboutMe.header": "Nadine Marion Pommerening, 27",
+  "aboutMe.profession": "Software Engineer",
+  "aboutMe.graduation": "Bachelor of Science, Media Informatics",
+  "aboutMe.description": "Hi, my name is Nadine and I live in Berlin.\nI am an open-minded person who likes to work in a team. I like to learn new things.\nHome office has become an important factor for me.\n\nI like to be involved myself and configure chatbots, modify websites or create wireframes.",
+  "aboutMe.contact.header": "Contact",
+  "aboutMe.contact.mobile": "0176/ 85154446",
+  "aboutMe.contact.email": "n.pommerening@dmsp.de",
+  "aboutMe.lang.header": "Languages",
+  "aboutMe.lang.body": "- German, native language\n- English, more confident in writing",
+  "aboutMe.skills.header": "Skills",
+  "aboutMe.skills.body": " - React, React-native, React-native-web\n- Typescript, Javascript\n- Accessibility\n- Wireframing"
+
+}

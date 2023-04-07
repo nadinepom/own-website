@@ -1,18 +1,7 @@
 import React from "react";
-import {
-  Text,
-  Link,
-  HStack,
-  Center,
-  Heading,
-  NativeBaseProvider,
-  extendTheme,
-  VStack,
-  Box, ScrollView,
-} from "native-base";
-import NativeBaseIcon from "./src/components/NativeBaseIcon";
-import {Floaters} from "./src/components/Floaters";
-import {Root} from "./src/components/Root";
+import { NativeBaseProvider, extendTheme } from "native-base";
+import { Root } from "./src/components/Root";
+import "./src/providers/LanguageProvider";
 
 // Define the config
 const config = {
@@ -28,12 +17,8 @@ declare module "native-base" {
 }
 export default function App() {
   return (
-      <NativeBaseProvider>
-
-
-
-        <Root />
-
-      </NativeBaseProvider>
+    <NativeBaseProvider>
+      <Root />
+    </NativeBaseProvider>
   );
 }
