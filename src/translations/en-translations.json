@@ -1,4 +1,5 @@
 {
+  "appbar.title": "Welcome",
   "aboutMe.header": "Nadine Marion Pommerening, 27",
   "aboutMe.profession": "Software Engineer",
   "aboutMe.graduation": "Bachelor of Science, Media Informatics",
@@ -9,6 +10,33 @@
   "aboutMe.lang.header": "Languages",
   "aboutMe.lang.body": "- German, native language\n- English, more confident in writing",
   "aboutMe.skills.header": "Skills",
-  "aboutMe.skills.body": " - React, React-native, React-native-web\n- Typescript, Javascript\n- Accessibility\n- Wireframing"
+  "aboutMe.skills.body": " - React, React-native, React-native-web\n- Typescript, Javascript\n- Accessibility\n- Wireframing",
+  "scroll.text": "Scroll to Top",
+  "footer.text": "©Copyright 2023 Nadine Pommerening | Berlin",
+  "footer.link": "Impressum & Datenschutzerklärung",
 
+  "timeline.job1.date": "feb 2020 - present",
+  "timeline.job1.profession": "Software Engineer",
+  "timeline.job1.header": "adesso mobile solutions GmbH\n",
+  "timeline.job1.body": "Development of a cross platform application with reference to accessibility.\n\nTypescript, React-native-web, React, Accessibility, Unit-Tests, Test-ID's\n\nJIRA, Confluence, IntelliJ, TeamCity, Microsoft Office, Android Studio, xCode, Flipper, Appium Studio",
+
+  "timeline.job2.date": "may 2019 - feb 2020",
+  "timeline.job2.profession": "IT Projectmanager",
+  "timeline.job2.header": "INTEGR8\n",
+  "timeline.job2.body": "Planning with the client, creating wireframes and writing proposals, as well as own programming of chatbots and landing pages.\n\nJavaScript, React, Python, Chatbots, Wireframing\n\nWordPress, Rasa, Dialogflow, XD, Balsamiq, Google Docs, Hubspot, Metabase",
+
+  "timeline.job3.date": "sept 2018 - apr 2019",
+  "timeline.job3.profession": "Web Developer (work student/ intership)",
+  "timeline.job3.header": "adesso mobile solutions GmbH\n",
+  "timeline.job3.body": "Development of a Progessive Web App (PWA) with an integrated chatbot. Also conception and design with wireframes. This also served for the bachelor thesis.\n\nJavaScript, React\n\nIBM Watson, Firebase, Sketch, Confluence, IntelliJ, Microsoft Office",
+
+  "timeline.job4.date": "aug 2017 - july 2018",
+  "timeline.job4.profession": "Projectmanager (work student)",
+  "timeline.job4.header": "Axel Springer Corporate Solutions\n",
+  "timeline.job4.body": "Create mockups and provide project management support, such as research, estimating, and input into CMS.\n\nBalsamiq, Microsoft Office, CMS Tools",
+
+  "timeline.job5.date": "aug 2016 - sept 2016",
+  "timeline.job5.profession": "Business Development (internship)",
+  "timeline.job5.header": "charly.education\n",
+  "timeline.job5.body": "Market analysis and identification of potential customers and partners in the areas of marketing and employer branding."
 }

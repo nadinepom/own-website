@@ -3,104 +3,67 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { AntDesign } from "@expo/vector-icons";
-import { Icon } from "native-base";
+import { Box, Heading, Text, useColorMode } from "native-base";
+import { useTranslation } from "react-i18next";
 
 export const Timeline = () => {
+  const { t } = useTranslation();
+  const { colorMode } = useColorMode();
+
+  const counter: string[] = ["1", "2", "3", "4", "5"];
+
   return (
-    <VerticalTimeline>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-        date="2011 - present"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<Icon as={AntDesign} name="github" size={"lg"} color="white" />}
-      >
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2010 - 2011"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<Icon as={AntDesign} name="github" size={"lg"} color="white" />}
-      >
-        <h3 className="vertical-timeline-element-title">Art Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          San Francisco, CA
-        </h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, SEO, Online
-          Marketing
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2008 - 2010"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<Icon as={AntDesign} name="github" size={"lg"} color="white" />}
-      >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-        <p>User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2006 - 2008"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<Icon as={AntDesign} name="github" size={"lg"} color="white" />}
-      >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          San Francisco, CA
-        </h4>
-        <p>User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="April 2013"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<Icon as={AntDesign} name="github" size={"lg"} color="white" />}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Content Marketing for Web, Mobile and Social Media
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-        <p>Strategy, Social Media</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="November 2012"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<Icon as={AntDesign} name="github" size={"lg"} color="white" />}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Agile Development Scrum Master
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-        <p>Creative Direction, User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2002 - 2006"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<Icon as={AntDesign} name="github" size={"lg"} color="white" />}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Bachelor of Science in Interactive Digital Media Visual Imaging
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-        <p>Creative Direction, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-        icon={<Icon as={AntDesign} name="github" size={"lg"} color="white" />}
-      />
-    </VerticalTimeline>
+    <Box mt={24}>
+      <VerticalTimeline lineColor={colorMode == "dark" ? "white" : "#80461B"}>
+        {counter.map((number) => {
+          return (
+            <VerticalTimelineElement
+              contentStyle={{
+                background: colorMode == "dark" ? "#F5DEB3" : "#483C32",
+              }}
+              contentArrowStyle={{
+                color: colorMode == "dark" ? "#F5DEB3" : "#483C32",
+                borderRight: "10px solid",
+              }}
+              iconStyle={{
+                background:
+                  number === "2" || number == "4" ? "#E97451" : "#988558",
+              }}
+            >
+              <Box flexDirection={"row"} justifyContent={"space-between"}>
+                <Text
+                  color={colorMode == "dark" ? "#722F37" : "#F5DEB3"}
+                  fontWeight="400"
+                  fontSize="xs"
+                >
+                  {t(`timeline.job${number}.profession`)}
+                </Text>
+                <Text
+                  color={colorMode == "dark" ? "#722F37" : "#F5DEB3"}
+                  fontWeight="400"
+                  fontSize="xs"
+                >
+                  {t(`timeline.job${number}.date`)}
+                </Text>
+              </Box>
+
+              <Heading
+                size="md"
+                color={colorMode == "dark" ? "#483C32" : "white"}
+              >
+                {t(`timeline.job${number}.header`)}
+              </Heading>
+              <Text
+                fontSize="xs"
+                color={colorMode == "dark" ? "black" : "white"}
+                fontWeight="400"
+              >
+                {t(`timeline.job${number}.body`)}
+              </Text>
+            </VerticalTimelineElement>
+          );
+        })}
+      </VerticalTimeline>
+    </Box>
   );
 };

@@ -1,7 +1,8 @@
 import React from "react";
 import { NativeBaseProvider, extendTheme } from "native-base";
-import { Root } from "./src/components/Root";
-import "./src/providers/LanguageProvider";
+import "./src/translations/i18n-translations";
+import { NavigationContainer } from "@react-navigation/native";
+import { Navigation } from "./src/navigation/Navigation";
 
 // Define the config
 const config = {
@@ -17,8 +18,10 @@ declare module "native-base" {
 }
 export default function App() {
   return (
-    <NativeBaseProvider>
-      <Root />
-    </NativeBaseProvider>
+    <NavigationContainer>
+      <NativeBaseProvider>
+        <Navigation />
+      </NativeBaseProvider>
+    </NavigationContainer>
   );
 }
