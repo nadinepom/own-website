@@ -1,11 +1,4 @@
-import {
-  Box,
-  ScrollView,
-  useMediaQuery,
-  Text,
-  Link,
-  Button,
-} from "native-base";
+import { Box, ScrollView, useMediaQuery, Text, Link } from "native-base";
 import {
   AppBar,
   AboutMe,
@@ -70,7 +63,9 @@ export const HomeScreen = ({
           <Text color={"white"}>{t("footer.text")}</Text>
           <Link
             color={"white"}
-            onPress={() => navigation.navigate("Impressum")}
+            onPress={() =>
+              navigation.navigate("Impressum & Datenschutzerklärung")
+            }
             textDecoration={"underline"}
           >
             <Text color={"white"}>{t("footer.link")}</Text>

@@ -12,42 +12,50 @@ import { useMediaQuery } from "native-base";
 import { useTranslation } from "react-i18next";
 import { AntDesign, Entypo } from "@expo/vector-icons";
 import { Linking } from "react-native";
+import { GlobalStylesheet } from "../utils";
+
 let profileImage = require("../../assets/DSC_1035.jpg");
-let dekoImage = require("../../assets/new Image.png");
+let dekoImage = require("../../assets/00129.png");
 
 export const AboutMe = () => {
   const { t } = useTranslation();
 
-  const [isMax900] = useMediaQuery({
-    maxWidth: 900,
+  const [isMax1024] = useMediaQuery({
+    maxWidth: 1024,
   });
   return (
     <Flex
-      direction={isMax900 ? "column" : "row"}
+      direction={isMax1024 ? "column" : "row"}
       mb="2.5"
       mt="1.5"
       justifyContent={"space-between"}
       width={"100%"}
     >
       <Box
-        flexDirection={isMax900 ? "column" : "row"}
-        width={isMax900 ? "100%" : "60%"}
+        style={GlobalStylesheet.shadow}
+        flexDirection={isMax1024 ? "column" : "row"}
+        flex={1}
         rounded="lg"
         overflow="hidden"
         shadow={2}
         backgroundColor="#C4A484"
         p={4}
+        mr={isMax1024 ? 0 : 200}
       >
-        <Image
-          source={profileImage}
-          mr={4}
-          shadow={4}
-          width={250}
-          height={250}
-          rounded={"full"}
-          alt="profile_nadine_pom"
-        />
-        <Stack p={4} space={3} flex={1}>
+        <Box>
+          <Image
+            style={GlobalStylesheet.shadow}
+            marginTop={50}
+            justifyContent={"center"}
+            source={profileImage}
+            mr={4}
+            width={250}
+            height={250}
+            rounded={"full"}
+            alt="profile_nadine_pom"
+          />
+        </Box>
+        <Stack p={4} space={3} flex={1} justifyContent={"center"}>
           <Stack space={2}>
             <Heading size="md" _dark={{ color: "black" }}>
               {t("aboutMe.header")}
@@ -86,19 +94,21 @@ export const AboutMe = () => {
       </Box>
 
       <Box
-        width={isMax900 ? "100%" : "20%"}
+        style={GlobalStylesheet.shadow}
+        width={isMax1024 ? "100%" : "30%"}
         rounded="lg"
         overflow="hidden"
         shadow={2}
         bg="#F5DEB3"
         px={4}
-        marginTop={isMax900 ? 12 : -12}
+        marginTop={isMax1024 ? 12 : -12}
       >
-        <Stack p={4} space={3} flex={1}>
+        <Stack p={4} space={3} flex={1} height={"100%"}>
           <Image
             source={dekoImage}
             width={"100%"}
-            height={200}
+            height={300}
+            resizeMode={"cover"}
             alt="plants_against_white_background"
           />
           <Heading size="md" mt={4} _dark={{ color: "black" }}>

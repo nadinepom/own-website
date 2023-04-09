@@ -5,6 +5,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { Box, Heading, Text, useColorMode } from "native-base";
 import { useTranslation } from "react-i18next";
+import { GlobalStylesheet } from "../utils";
 
 export const Timeline = () => {
   const { t } = useTranslation();
@@ -19,6 +20,7 @@ export const Timeline = () => {
           return (
             <VerticalTimelineElement
               contentStyle={{
+                boxShadow: "8px 3px 10px rgb(0 0 0 / 0.2)",
                 background: colorMode == "dark" ? "#F5DEB3" : "#483C32",
               }}
               contentArrowStyle={{

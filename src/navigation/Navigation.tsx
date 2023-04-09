@@ -13,9 +13,17 @@ export const Navigation: React.FC<{}> = () => {
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="Impressum"
+        name="Impressum & Datenschutzerklärung"
         component={ImpressumScreen}
-        // options={{ headerBackground: "#C2B280" }}
+        options={{
+          headerStyle: { backgroundColor: "#C2B280" },
+          headerTitleStyle: {
+            color: "white",
+            fontSize: 20,
+            fontWeight: "bold",
+          },
+          headerTintColor: "white",
+        }}
       />
     </Stack.Navigator>
   );
