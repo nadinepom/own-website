@@ -2,7 +2,8 @@ import React from "react";
 import { NativeBaseProvider, extendTheme } from "native-base";
 import "./src/translations/i18n-translations";
 import { NavigationContainer } from "@react-navigation/native";
-import { Navigation } from "./src/navigation/Navigation";
+// import { Navigation } from "./src/navigation/Navigation";
+import { HomeScreen } from "./src/screens";
 
 // Define the config
 const config = {
@@ -20,7 +21,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <NativeBaseProvider>
-        <Navigation />
+        <HomeScreen />
       </NativeBaseProvider>
     </NavigationContainer>
   );

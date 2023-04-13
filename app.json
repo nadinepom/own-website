@@ -4,9 +4,9 @@
     "slug": "np-website",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/favicon.png",
+    "icon": "./assets/white-Bild.png",
     "splash": {
-      "image": "./assets/favicon.png",
+      "image": "./assets/white-Bild.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,17 +17,18 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.npwebsite.ios"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/favicon.png",
+        "foregroundImage": "./assets/white-Bild.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.nadine_pom.npwebsite"
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro"
+      "favicon": "./assets/favicon.png"
     }
   }
 }

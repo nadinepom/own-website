@@ -3,8 +3,7 @@ import {
   AppBar,
   AboutMe,
   Floaters,
-  ScrollButton,
-  Timeline,
+  TimelineSteps,
 } from "../components";
 import { useTranslation } from "react-i18next";
 
@@ -49,9 +48,8 @@ export const HomeScreen = ({
           }}
         >
           <AboutMe />
-          <Timeline />
+          <TimelineSteps />
         </Box>
-        {/*<ScrollButton navigation={navigation} />*/}
         <Box
           width={"100%"}
           py={30}
