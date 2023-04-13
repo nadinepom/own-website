@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "src/index.js",
   "keywords": [
     "react",
     "expo",
@@ -48,7 +48,6 @@
   "resolutions": {
     "@types/react": "^18.0.33"
   },
-
   "homepage": "https://github.com/nadinepom/own-website",
   "author": "Nadine Pommerening",
   "private": true
