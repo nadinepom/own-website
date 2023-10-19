@@ -16,7 +16,7 @@ export const Navigation: React.FC<{}> = () => {
         name="Impressum & Datenschutzerklärung"
         component={ImpressumScreen}
         options={{
-          headerStyle: { backgroundColor: "#C2B280" },
+          headerStyle: { backgroundColor: "#5E5E5E" },
           headerTitleStyle: {
             color: "white",
             fontSize: 20,

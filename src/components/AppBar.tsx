@@ -10,7 +10,7 @@ export const AppBar = () => {
   return (
     <Box position={"sticky"} top={0} w="100%" height={100} zIndex={100}>
       <HStack
-        bg="#C2B280"
+        background={"#5E5E5E"}
         px={{ base: 4, md: 10, lg: 20, xl: 20 }}
         py="2"
         justifyContent="space-between"

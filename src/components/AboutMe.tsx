@@ -14,8 +14,8 @@ import { AntDesign, Entypo } from "@expo/vector-icons";
 import { Linking } from "react-native";
 import { GlobalStylesheet } from "../utils";
 
-let profileImage = require("../../assets/DSC_1035.jpg");
-let dekoImage = require("../../assets/00129.png");
+let profileImage = require("../../assets/IMG_4035.jpg");
+let dekoImage = require("../../assets/00221.jpg");
 
 export const AboutMe = () => {
   const { t } = useTranslation();
@@ -38,14 +38,14 @@ export const AboutMe = () => {
         rounded="lg"
         overflow="hidden"
         shadow={2}
-        backgroundColor="#C4A484"
+        backgroundColor="#F2B16A"
         p={4}
         mr={isMax1024 ? 0 : 200}
       >
         <Box>
           <Image
             style={GlobalStylesheet.shadow}
-            marginTop={50}
+            marginTop={90}
             justifyContent={"center"}
             source={profileImage}
             mr={4}
@@ -60,10 +60,10 @@ export const AboutMe = () => {
             <Heading size="md" _dark={{ color: "black" }}>
               {t("aboutMe.header")}
             </Heading>
-            <Text bold color={"white"} fontWeight="500" mb={-2}>
+            <Text bold color={"black"} fontWeight="600">
               {t("aboutMe.profession")}
             </Text>
-            <Text fontSize="xs" color={"white"} fontWeight="500">
+            <Text fontSize="xs" color={"black"} fontWeight="500">
               {t("aboutMe.graduation")}
             </Text>
           </Stack>
@@ -99,7 +99,7 @@ export const AboutMe = () => {
         rounded="lg"
         overflow="hidden"
         shadow={2}
-        bg="#F5DEB3"
+        backgroundColor={"#F29564"}
         px={4}
         marginTop={isMax1024 ? 12 : -12}
       >
@@ -111,16 +111,16 @@ export const AboutMe = () => {
             resizeMode={"cover"}
             alt="plants_against_white_background"
           />
-          <Heading size="md" mt={4} _dark={{ color: "black" }}>
+          <Heading size="lg" mt={4} _dark={{ color: "black" }}>
             {t("aboutMe.lang.header")}
           </Heading>
-          <Text fontWeight="400" _dark={{ color: "black" }}>
+          <Text fontWeight="600" _dark={{ color: "black" }}>
             {t("aboutMe.lang.body")}
           </Text>
-          <Heading size="md" mt={4} _dark={{ color: "black" }}>
+          <Heading size="lg" mt={4} _dark={{ color: "black" }}>
             {t("aboutMe.skills.header")}
           </Heading>
-          <Text fontWeight="400" _dark={{ color: "black" }}>
+          <Text fontWeight="600" _dark={{ color: "black" }}>
             {t("aboutMe.skills.body")}
           </Text>
         </Stack>

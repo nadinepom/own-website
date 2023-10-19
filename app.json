@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "np-website",
-    "slug": "np-website",
+    "slug": "own-website",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/white-Bild.png",
@@ -29,6 +29,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d72d2c88-f54a-460d-bf06-dd7d571417d3"
+      }
+    },
+    "owner": "nadine_pom"
   }
 }

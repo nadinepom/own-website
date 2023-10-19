@@ -11,7 +11,7 @@ export const ImpressumScreen = () => {
       {counter.map((number) => {
         return (
           <Box mr={50}>
-            <Heading size="xl" color={"gray.500"} mb={5} mt={10}>
+            <Heading size="xl" background={"#5E5E5E"} mb={5} mt={10}>
               {t(`impressum.section${number}.header`)}
             </Heading>
             <Text ml={6} fontWeight="500">
